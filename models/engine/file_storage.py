@@ -24,7 +24,7 @@ class FileStorage:
     # dictionary - empty but will store all objects by <class name>.id
     __objects = {}
 
-def all(self, cls=None):
+    def all(self, cls=None):
         """returns the dictionary __objects"""
         if cls is not None:
             new_dict = {}
@@ -34,7 +34,7 @@ def all(self, cls=None):
             return new_dict
         return self.__objects
 
-def get(self, cls, id):
+    def get(self, cls, id):
         """retrieves an object of a class with id"""
         if cls is not None:
             res = list(
